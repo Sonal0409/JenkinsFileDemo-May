@@ -18,6 +18,7 @@ pipeline{
         stage('Compile Code'){
             steps{
                 sh 'mvn compile'
+                sh 'mvn pmd:pmd'
             }
         }
         
